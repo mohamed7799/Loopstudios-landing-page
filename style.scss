@@ -1,0 +1,210 @@
+//colors
+
+$White: hsl(0, 0%, 100%);
+$Black: hsl(0, 0%, 0%);
+$Dark-Gray: hsl(0, 0%, 55%);
+$Very-Dark-Gray: hsl(0, 0%, 41%);
+
+//reset
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+//global styles
+
+h1,
+h2,
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  display: block;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  padding: 3rem 1rem;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+footer {
+  text-align: center;
+}
+
+// main style
+
+header {
+  background-image: url("/imgs/mobile/image-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  color: $White;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & * {
+    cursor: pointer;
+  }
+}
+
+.nav-items-desktop {
+  display: none;
+}
+
+.logo img {
+  width: 80%;
+}
+
+#bars-btn {
+  font-size: 2rem;
+}
+
+h1 {
+  border: 2px solid $White;
+  font-size: 2.5rem;
+  margin: auto;
+}
+
+#About article {
+  margin: 1rem 0rem;
+
+  & p {
+    text-align: center;
+    line-height: 1.6;
+    color: $Very-Dark-Gray;
+    padding: 0rem 2rem;
+  }
+}
+
+#our-creation {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  order: 1;
+  cursor: pointer;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Alata", sans-serif;
+  font-size: 1rem;
+  margin: 2rem auto;
+  display: block;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $Black;
+    color: $White;
+  }
+}
+
+#grid-images {
+  margin: 2rem 0rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#grid-images li {
+  position: relative;
+  & h3 {
+    position: absolute;
+    color: $White;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    font-weight: 100;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.493) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
+
+footer {
+  background-color: $Black;
+  color: $White;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  & p {
+    color: $Dark-Gray;
+  }
+}
+
+.logo-footer {
+  & img {
+    width: 40%;
+    margin: auto;
+  }
+}
+
+.nav-items-footer {
+  & > * {
+    padding: 0.5rem 1rem;
+  }
+}
+
+address {
+  & * {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+// dynamic styles
