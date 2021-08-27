@@ -197,7 +197,7 @@ footer {
   background-color: $Black;
   color: $White;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   justify-items: center;
   gap: 2rem;
@@ -298,6 +298,10 @@ address {
 
   #our-creation button {
     order: 0;
+  }
+
+  footer {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 
   footer p {
